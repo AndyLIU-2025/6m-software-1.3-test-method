@@ -35,3 +35,28 @@ Question 2:
 const arr1 = [15, 12, 11, 29, 5];
 const arr2 = [13, 2, 6, 7];
 */
+
+// Question 1
+console.log("---Q1 Average grade is 85---")
+const grades = [80, 90, 75, 88, 92];
+let sum = 0;
+
+for (let i = 0; i < grades.length; i++) {
+    sum += grades[i];
+}
+
+const average = sum / grades.length;
+console.log("Average grade is", average); //Average grade is 85
+
+// Question 2
+console.log("---Q2---")
+const arr1 = [15, 12, 11, 29, 5];
+const arr2 = [13, 2, 6, 7];
+
+// Step 1: Combine both arrays
+let combinedArr = arr1.concat(arr2); // or [...arr1, ...arr2]
+console.log("Combined array:", combinedArr);
+
+// Step 2: Filter out even-indexed values
+let resultArr = combinedArr.filter((_, index) => index % 2 !== 0);
+console.log("Array with even-indexed values removed:", resultArr);
