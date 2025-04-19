@@ -32,3 +32,12 @@ Exercise:
     d. coursesOffered - Array containing 3 Strings
 2. Print in the console the following sentence using the "school object" - "Welcome to <name> and we offer <coursesOffered>
 */
+const school = {
+    name:"Nanhua primary school",
+    yearEstablished: 1917,
+    isActive:true,
+    coursesOffered: ['math','English','Chinese']
+}
+//console.log( "Welcome to ",school.name,"and we offer ", school['coursesOffered'],".");
+//console.log(`Welcome to ${school.name} and we offer ${school.coursesOffered.join(", ")}`);
+console.log(`Welcome to ${school.name} and we offer ${school.coursesOffered.join(", ")} ${'.'}`);
